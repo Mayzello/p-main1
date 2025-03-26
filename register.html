@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+       .lb-register {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../p-main/asset/blur-bg.png);
+    background-size: cover;
+    background-position: center;
+    z-index: auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.register-logo {
+    position: absolute;
+    top: 15px; /* Sesuaikan posisi */
+    left: 960px;
+    transform: translateX(-50%);
+    width: 650px; /* Pastikan ukurannya cukup besar */
+    height: auto;
+    z-index: 1; /* Pastikan ada di atas elemen lain */
+    display: block; /* Pastikan tampil */
+}
+
+
+
+/* Container utama */
+.container {
+    text-align: center;
+    position: relative;
+}
+
+/* Gaya teks LOGIN */
+.login-title {
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* Login Box */
+.login-box {
+    background: #f8e8d1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    margin-top: 300px;
+    position: relative;
+    z-index: 5;
+    left: 40.5%;
+}
+
+/* Input Username & Password */
+.input-group {
+    pointer-events: auto;
+    display: block;
+    opacity: 1;
+    align-items: center;
+    background: #4a6f45;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    z-index: 11;
+}
+
+.input-group .icon {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.input-group input {
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+    flex: 1;
+    font-size: 18px;
+}
+
+/* Input Email */
+.input-group.email {
+    display: flex;
+    align-items: center;
+    background: #4a6f45;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.input-group.email .icon {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.input-group.email input {
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+    flex: 1;
+    font-size: 18px;
+}
+
+
+/* Tombol Login */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    background: #3c5a39;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background: #2f4735;
+}
+
+/* Teks Sign In */
+.login-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #444;
+}
+
+.login-text a {
+    color: #4a6f45;
+    text-decoration: none;
+}
+
+.leaves {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.leaf {
+    width: 20px;
+    height: 40px;
+    background: #3c5a39;
+    border-radius: 10px;
+    transform: rotate(30deg);
+    animation: sway 2s infinite alternate ease-in-out;
+}
+
+@keyframes sway {
+    0% {
+        transform: rotate(25deg);
+    }
+    100% {
+        transform: rotate(35deg);
+    }
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 9%;
+    height: 10%;
+    z-index: 20;
+}
+    </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+</head>
+<body>
+<div class="lb-register">
+    <div class="login-container">
+        <img src="../p-main/asset/register-logo.png" class="register-logo" width="150">
+        
+        <a href="/p-main/p-main/landingpage/index.html#">
+            <img src="../p-main/asset/back.png" class="back-button">
+        </a>
+      <form action="#" method="post">
+        <div class="login-box">
+            <div class="input-group email">
+                <span class="icon">📧</span>
+                <input type="email" placeholder="Email" id="email">
+            </div>
+
+            <div class="input-group">
+                <span class="icon">🔒</span>
+                <input type="password" placeholder="Password" id="password">
+            </div>
+            
+            <div class="input-group">
+                <span class="icon">🔒</span>
+                <input type="password" placeholder="Confirm Password" id="confirm_password">
+            </div>
+            <button class="login-button" id="signup-btn">Login</button>
+            <p class="login-text"> don't have an account? <a href="login.html">Log In</a></p>
+        </form>
+        </div>
+    </div>
+</div>
+    
+    
+    
+</body>
+</html>
+    <script type="module" src="register.js"></script>
+</body>
+</html>

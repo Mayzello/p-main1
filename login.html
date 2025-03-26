@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .lb-login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("asset/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -11;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-logo {
+    position: absolute;
+    top: 10px; /* Sesuaikan posisi */
+    left: 955px;
+    transform: translateX(-50%);
+    width: 650px; /* Pastikan ukurannya cukup besar */
+    height: auto;
+    z-index: 60; /* Pastikan ada di atas elemen lain */
+    display: block; /* Pastikan tampil */
+}
+
+/* Container utama */
+.container {
+    text-align: center;
+    position: absolute;
+}
+
+/* Gaya teks LOGIN */
+.login-title {
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* Login Box */
+.login-box {
+    background: #f8e8d1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    margin-top: 15px;
+    position: absolute;
+    left: 780px;
+    top: 350px;
+}
+
+/* Input Username & Password */
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #4a6f45;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.input-group .icon {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.input-group input {
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+    flex: 1;
+    font-size: 18px;
+}
+
+/* Tombol Login */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    background: #3c5a39;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background: #2f4735;
+}
+
+/* Teks Sign In */
+.register-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #444;
+}
+
+.register-text a {
+    color: #4a6f45;
+    text-decoration: none;
+}
+
+.leaves {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.leaf {
+    width: 20px;
+    height: 40px;
+    background: #3c5a39;
+    border-radius: 10px;
+    transform: rotate(30deg);
+    animation: sway 2s infinite alternate ease-in-out;
+}
+
+@keyframes sway {
+    0% {
+        transform: rotate(25deg);
+    }
+    100% {
+        transform: rotate(35deg);
+    }
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 9%;
+    height: 10%;
+}
+    </style>
+</head>
+<body>
+    <div class="lb-login">
+        <div class="login-container">
+            <img src="../p-main/asset/login-logo.png" class="login-logo" width="150">
+            <a href="/p-main/p-main/landingpage/index.html#">
+                <img src="./asset/back.png" class="back-button">
+            </a>
+            
+            <div class="login-box">
+                <div class="input-group">
+                    <span class="icon">👤</span>
+                    <input type="email" name="email" placeholder="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <span class="icon">🔒</span>
+                    <input type="password" name="password" placeholder="password" id="password" required>
+                </div>
+                <button type="submit" id="signin-btn" class="login-button">Login</button>
+                <p class="register-text"> don't have an account? <a href="register.html">Sign In</a></p>
+            </div>
+        </div>
+        </div>
+    <script type="module" src="login.js"></script>
+</body>
+</html>
